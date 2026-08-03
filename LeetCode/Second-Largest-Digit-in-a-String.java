@@ -10,13 +10,19 @@ class Solution {
             }
 
         }
+        if (sb.length() == 0) return -1;
         
        String t = sb.toString();
 
        char nums[] = t.toCharArray();
        Arrays.sort(nums);
-       if(arr[0] != arr[1]){
-        return arr[0];
+
+       int largest = nums[nums.length-1];
+
+       for(int i = nums.length-1 ; i >= 0 ; i--){
+            if(nums[i] != largest){
+                return nums[i] -'0';
+            }
        }
        return -1;
     }
