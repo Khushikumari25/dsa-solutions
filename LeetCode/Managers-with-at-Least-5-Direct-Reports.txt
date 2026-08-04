@@ -1,0 +1,5 @@
+# Write your MySQL query statement below
+select distinct e.name as name from Employee e
+join Employee e1
+on e.id = e1.ManagerId;
+
