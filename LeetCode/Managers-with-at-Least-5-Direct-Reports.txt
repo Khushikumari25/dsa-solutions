@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-select distinct e.name as name from Employee e
+select e.name as name from Employee e
 join Employee e1
 on e.id = e1.managerId
 group by e.id , e.name
