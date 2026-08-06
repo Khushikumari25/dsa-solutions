@@ -17,6 +17,10 @@ class Solution {
                     return i;
                 }
             }
+            else if (s.length() == 3) {
+                int mul = (s.charAt(0) - '0') * (s.charAt(1) - '0') * (s.charAt(2) - '0');
+                if (mul % t == 0) return i;
+            }
         }
         return -1;
     }
