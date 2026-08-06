@@ -5,6 +5,9 @@ class Solution {
         }
         if( t ==1 ){
             return n;
+        } 
+        if( n == 1){
+            return t;
         }
     
             
