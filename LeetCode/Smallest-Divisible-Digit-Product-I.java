@@ -3,10 +3,14 @@ class Solution {
         if( n == t){
             return n;
         }
+    
             
         for(int i = n ; i <= 100 ; i++){
             String s = String.valueOf(i);
             if( s.length() == 1){
+                return t;
+            }
+             if( s.length() == 1 && s.charAt(0) > t){
                 return t;
             }
             for(int j = 0 ; j < s.length(); j++){
