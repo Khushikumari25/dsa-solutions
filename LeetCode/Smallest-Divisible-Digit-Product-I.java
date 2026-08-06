@@ -1,5 +1,8 @@
 class Solution {
     public int smallestNumber(int n, int t) {
+        if( n == t){
+            return n;
+        }
     
         for(int i = n ; i <= 100 ; i++){
             String s = String.valueOf(i);
