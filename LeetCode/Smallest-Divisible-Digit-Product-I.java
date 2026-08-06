@@ -3,6 +3,9 @@ class Solution {
         if( n == t){
             return n;
         }
+        if( t ==1 ){
+            return n;
+        }
     
             
         for(int i = n ; i <= 100 ; i++){
@@ -10,9 +13,7 @@ class Solution {
             if( s.length() == 1){
                 return t;
             }
-             if( s.length() == 1 && s.charAt(0) > t){
-                return t;
-            }
+        
             for(int j = 0 ; j < s.length(); j++){
                 int mul = s.charAt(0) * s.charAt(1);
                 if(mul % t == 0 ){
