@@ -1,0 +1,19 @@
+class Solution {
+    public int smallestNumber(int n, int t) {
+    
+        for(int i = n ; i <= 100 ; i++){
+            String s = String.valueOf(i);
+            for(int j = 0 ; j < s.length(); j++){
+                int mul = s.charAt(0) * s.charAt(1);
+                if(mul % t == 0 ){
+                    return Integer.parseInt(s);
+                }
+                break;
+            }
+        
+            
+        }
+        return -1;
+        
+    }
+}
