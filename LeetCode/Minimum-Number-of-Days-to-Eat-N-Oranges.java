@@ -14,7 +14,8 @@ class Solution {
 
         if (dp.containsKey(n)) {
             return dp.get(n);
-        }
+        } 
+        // yha pe n % 2 isliye lagya hai kitne aur extra days lagenge 
 
         int by2 = n % 2 + solve(n / 2);
         int by3 = n % 3 + solve(n / 3);
